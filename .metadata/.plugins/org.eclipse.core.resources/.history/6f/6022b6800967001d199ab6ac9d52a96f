@@ -1,0 +1,14 @@
+package test_11_18th;
+
+public class Driver_ex {
+
+	public static void main(String[] args) {
+		Driver dr = new Driver();
+		Bus bus = new Bus();
+		
+		
+		dr.drive(bus);
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package test_11_18th;
+
+public class Driver_ex {
+
+	public static void main(String[] args) {
+		Driver dr = new Driver();
+		Bus bus = new Bus();
+		Taxi tax = new Taxi();
+		Vehicle ve = new Vehicle();
+		
+		dr.drive(bus);
+		dr.drive(tax);
+		dr.drive(ve);
+		
+	}
+
+}

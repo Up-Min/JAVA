@@ -1,0 +1,16 @@
+package school;
+
+import java.util.ArrayList;
+
+public class Student {
+	/*
+	 【문항1】 아래 클래스 다이어그램을 참고하여 school 패키지의 Student.java를 완성하시오.
+        - 필드 작성
+        - 생성자 작성
+        - 필드에 대한 getter, setter 메소드 작성
+	 */
+	
+	public void addSubjectScore(Score score){
+		scoreList.add(score);
+	}
+}

@@ -1,0 +1,20 @@
+package test_11_10th;
+
+public class StringMethod_ex {
+
+	public static void main(String[] args) {
+		String ssn = "5342561234056"; // 주민번호
+		char gender = ssn.charAt(6);	// ssn의 6번 인덱스를 지정
+		
+		switch(gender) {
+		case '1' :
+		case '3' :
+			System.out.println("남자");
+			break;
+		case '2' :
+		case '4' :
+			System.out.println("여자");
+			break;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+package game;
+
+import java.util.Scanner;
+
+import data.Map;
+
+public class Game_App {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("===== F1 게임 =====");
+		System.out.println("==== 플레이를 원하시면 1번을 눌러주세요 ====");
+		int a = sc.nextInt();
+		if(a == 1) {
+			System.out.println("===== 플레이 하실 맵을 선택해주세요 =====");
+		}
+		
+
+		
+	}
+
+}

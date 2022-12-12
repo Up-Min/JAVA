@@ -1,0 +1,33 @@
+package data;
+
+import setting.Define;
+
+public class Tire {
+	private int nowTire = Define.SLICK_TIRE;
+	Car c = new Car();
+	Weather w = new Weather();
+	
+	public void tire_Clear() {
+		if(w.getWeather() == Define.WEATHER_CLEAR) {
+			if(getNowTire() == Define.SLICK_TIRE) {
+				
+			}else if (getNowTire() == Define.INTERMEDIATE_TIRE)
+		}
+	}
+	
+	
+	public void tirePunture() {
+		c.setCarSpeed(0);
+	}
+
+	public int getNowTire() {
+		return nowTire;
+	}
+
+	public void setNowTire(int nowTire) {
+		this.nowTire = nowTire;
+	}
+
+	
+}
+

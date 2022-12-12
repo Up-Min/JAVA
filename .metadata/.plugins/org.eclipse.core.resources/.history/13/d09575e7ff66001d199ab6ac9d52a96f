@@ -1,0 +1,15 @@
+package test_11_18th;
+
+public class Car_ex {
+
+	public static void main(String[] args) {
+		Car c = new Car();
+		
+		c.run(); // 이렇게 하면 에러가 남.
+		
+		
+		
+		
+	}
+
+}

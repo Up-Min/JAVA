@@ -1,0 +1,8 @@
+package game;
+
+public class Game_field {
+	public int turn = 0;
+	public boolean game_status;
+	
+	
+}

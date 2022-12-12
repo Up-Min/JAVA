@@ -1,0 +1,8 @@
+package test_11_18th;
+
+public class Driver {
+	// 메소드 구현 (매개변수로 다형성 구현)
+	public void drive(Vehicle vehicle) {
+		vehicle.run(); 
+	}
+}

@@ -1,0 +1,15 @@
+package data;
+
+public class Fuel {
+	
+	private int FuelLevel = 100;
+	
+	public void FuelRecharge(int recharge) {
+		this.FuelLevel += recharge;
+	}
+	
+	public void FuelUse() {
+		this.FuelLevel -= this.FuelLevel;
+	}
+
+}

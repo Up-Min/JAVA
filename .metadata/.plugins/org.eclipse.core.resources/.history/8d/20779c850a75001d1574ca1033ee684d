@@ -1,0 +1,27 @@
+package data;
+
+import setting.Define;
+
+public class Tire {
+	private int nowTire = Define.SLICK_TIRE;
+	Car c = new Car();
+	
+	
+	public void tirePunture() {
+		c.setCarSpeed(0);
+	}
+
+
+	public int getNowTire() {
+		return nowTire;
+	}
+
+
+	public void setNowTire(int nowTire) {
+		this.nowTire = nowTire;
+	}
+
+	
+	
+}
+

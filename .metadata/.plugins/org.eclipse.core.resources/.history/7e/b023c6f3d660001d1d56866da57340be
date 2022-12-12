@@ -1,0 +1,37 @@
+package test_11_10th;
+
+public class question {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		// 7번
+//		int sum = 0;
+//		int[] arr = {10, 20, 30, 40, 50};
+//		for(int i : arr) {
+//			sum+=i;
+//		}
+//		System.out.println(sum);
+		
+		//9번
+		int[][] array = {
+			      {95, 86},
+			      {83, 92, 96},
+			      {78, 83, 93, 87, 88}
+			};
+		int sum = 0;
+		int length = 0;
+		
+		for(int i =0; i<array.length; i++) {
+			length += array[i].length;
+			for(int j=0; j<array[i].length; j++) {
+				sum += array[i][j];
+			}
+		}
+		double avr = (double)(sum/length);
+		System.out.println(sum+","+avr);
+		
+	}
+
+}

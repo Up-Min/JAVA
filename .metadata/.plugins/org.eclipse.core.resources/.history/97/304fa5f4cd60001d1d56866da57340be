@@ -1,0 +1,12 @@
+package test_11_10th;
+
+public class Reference_ex {
+
+	public static void main(String[] args) {
+		int [] arr1 ;
+		int [] arr2 ;
+		int [] arr3 ;
+
+	}
+
+}

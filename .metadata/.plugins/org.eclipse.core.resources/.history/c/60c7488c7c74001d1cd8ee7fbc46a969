@@ -1,0 +1,29 @@
+package test_12_5th_stream;
+
+import java.io.File;
+import java.io.IOException;
+
+public class FileEx {
+
+	public static void main(String[] args) {
+		File dir = new File("C:/Temp/images"); // create file location object.
+		File file1 = new File("C:/Temp/file1.txt"); // create file location.
+		File file2 = new File("C:/Temp/file2.txt"); // create file location.
+		File file3 = new File("C:/Temp/file3.txt"); // create file location.
+		
+		// create file if there is no directory, file
+		if(dir.exists() == false) {dir.mkdir();} // make image folder by using dir (check images folder is exist)
+		if(file1.exists() == false) {try {file1.createNewFile(); // make new file by using create newFile
+		} catch (IOException e) {
+			e.printStackTrace();
+		}} 
+		
+		// return file, folder list in Temp folder
+		File temp = new File("C:/Temp");
+		File[] contents = temp.listFiles(); // return file list object saved in folder.
+		
+		
+		
+	}
+
+}

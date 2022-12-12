@@ -1,0 +1,28 @@
+package test_12_5th_stream;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+
+public class ReadEx {
+	//input stream
+	public static void main(String[] args) {
+		try {
+			FileInputStream is = new FileInputStream("C:/Temp/test1.db");
+			
+			while(true) {
+				int data = is.read(); // read each 1 byte.
+				if(data == -1) break; // nothing to read, read() returns '-1'
+				System.out.println(data);
+			}		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	//using write(integer) to buffer -> all contents finish, flush to save in test1.db -> writer close.
+	// 
+
+}

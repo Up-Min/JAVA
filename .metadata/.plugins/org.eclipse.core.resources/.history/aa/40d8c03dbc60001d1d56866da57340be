@@ -1,0 +1,18 @@
+package test_11_10th;
+
+public class Equals_ex {
+
+	public static void main(String[] args) {
+
+	String strVar1 = "홍길동";
+	String strVar2 = "김김김";
+	
+		if(strVar1 == strVar2) {
+			System.out.println("둘은 참조가 같음");
+		}else {
+			System.out.println("둘은 참조가 다름");
+		}
+		
+
+	}
+}

@@ -1,0 +1,17 @@
+package test_11_10th;
+
+public class Equals_ex {
+
+	public static void main(String[] args) {
+
+		//str은 리터럴(내용)이 같으면 같은 주소를 가르킴 (참조하다) 
+	String strVar1 = "홍길동";
+	String strVar2 = "홍길동";
+	
+		if(strVar1 == strVar2) { //두 str의 주소에 대응하는 참조를 비교함
+			System.out.println("둘은 참조가 같음");
+		}else {
+			System.out.println("둘은 참조가 다름");
+		}
+	}
+}

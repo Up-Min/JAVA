@@ -1,0 +1,14 @@
+package test_11_10th;
+
+public class Array_ex {
+
+	public static void main(String[] args) {
+
+		String[] season = {"Spring","Summer","Fall","Winter"};
+		int[] arr = {1,2,3,4,5,2,12,3};
+		
+		System.out.println(season);
+		
+
+	}
+}

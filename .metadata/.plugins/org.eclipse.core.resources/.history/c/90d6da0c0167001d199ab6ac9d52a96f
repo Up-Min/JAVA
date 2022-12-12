@@ -1,0 +1,20 @@
+package test_11_18th;
+
+public class Car_ex {
+
+	public static void main(String[] args) {
+		Car c = new Car();
+		
+		c.tire = new Tire(); // 컴파일 에러때문에 새로 객체 선언
+		
+		c.run(); // 이렇게 하면 에러가 남.
+		// 아직 객체가 들어가 있지 않기 때문에;.
+		
+		
+		
+		
+		
+		
+	}
+
+}

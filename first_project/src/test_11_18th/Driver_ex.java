@@ -1,0 +1,23 @@
+package test_11_18th;
+
+public class Driver_ex {
+
+	public static void main(String[] args) {
+		Driver dr = new Driver();
+		
+		
+		// 부모 클래스 그자체
+		Vehicle ve = new Vehicle();
+		// 부모 클래스에 상속받은 애들의 이름
+		Bus bus = new Bus();
+		Taxi tax = new Taxi();
+		
+			
+		dr.drive(bus);
+		// Vehicle vehicle = new Bus();
+		dr.drive(tax);
+		dr.drive(ve);
+		
+	}
+
+}

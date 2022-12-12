@@ -1,0 +1,21 @@
+package data;
+
+import setting.Define;
+
+public class Weather {
+	Car C = new Car();
+	Tire T = new Tire();
+	
+	public void WeatherClear() {
+		if(T.getNowTire() == Define.SLICK_TIRE) {
+			C.setCarSpeed(0);
+		}
+	}
+	public void WeatherCloudy() {
+		
+	}
+	public void Weatherrainy() {
+		
+	}
+	
+}

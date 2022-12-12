@@ -1,0 +1,18 @@
+package test_11_10th;
+
+public class Array_Multi_ex {
+
+	public static void main(String[] args) {
+
+		// 다차원 배열
+		int[][] score = { 
+				{ 80, 90, 95 }, 
+				{ 80, 90 } 
+				};
+		
+		System.out.println("1차원 배열 길이"+score.length);
+		System.out.println("2차원 1번항 배열 길이"+score[0].length);
+		System.out.println("2차원 2번항 배열 길이"+score[1].length);
+
+	}
+}

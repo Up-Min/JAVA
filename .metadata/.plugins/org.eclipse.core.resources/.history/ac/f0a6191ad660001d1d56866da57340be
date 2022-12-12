@@ -1,0 +1,18 @@
+package test_11_10th;
+
+public class question {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		// 7번
+		int sum = 0;
+		int[] arr = {10, 20, 30, 40, 50};
+		for(int i : arr) {
+			sum+=i;
+		}
+		System.out.println(sum);
+	}
+
+}

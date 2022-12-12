@@ -1,0 +1,64 @@
+
+
+F1 게임
+
+F1 자동차의 속도는 날씨 + 타이어의 조합에 따른 영향을 받는다.
+
+최대속도가 100이라 할때,
+날씨가 맑은 날의 슬릭 타이어는 100%의 속도를,
+날씨가 맑은 날에 우천용 타이어는 60%의 속도를
+비가 오는 날에 우천용 타이어는 80%의 속도를,
+비가 오는 날에 슬릭 타이어는 30% 속도를 나게 한다.
+
+매 선택마다 턴수는 1씩 증가하고, 기름은 10%씩 줄어들기 때문에, 
+적어도 9번에 한번씩은 기름을 보충해야한다. 기름이 0이되면 그대로 게임에서 탈락.
+
+최종 상태에서는 턴수를 출력한다.
+
+차량의 상태 -> 객체화 (타이어 상태, 기름현황, 현재 속도)
+
+- 레이스 시작 전
+0. 코스 지정 (코스의 총 거리)
+
+- 레이스 중
+1. 날씨 변경 (다양화 1) (맑음, 비) -> 기본 맑음. 매 턴마다 30%의 확률로 흐림,
+			       흐림은 5턴동안 유지, 흐림동안 60%의 확률로 우천.
+			      우천은 3턴동안 유지. 이후 50% 확률로 맑음 or 흐림 
+
+2. 타이어 변경 (다양화 2)
+3. 기름 보충 
+
+- 레이스 종료
+1. 총 사용한 턴수 출력.
+
+
+
+Class
+
+Define(static final) : wheather clear : 0, wheather clouldy : 1, weather rainy : 2
+		slick TIRE : 1001, intermediate tire : 1002 
+
+maps : AbuDhabi. Austria, France, Hungray, GreatBritain, Monaco 
+
+fuel : fuel level
+
+radio : recomand to change, force to change, situation happens
+
+warning : 0/1 -> if situation happens, activate radio to declare situation.
+	          return radio.situation to console for alert
+
+tyre : tyre type, tyre status, tyre speed ratio.
+		every turn tyre has 3% to punture, 
+		if tyre status maintains punture 3turns more. race retires
+
+Car : speed, (object) new fuel, (object) new tyre
+
+wheather condition : clear, cloudy, rainy
+		default is clear, every clear has 30% to cloudy.
+		when cloudy, maintains 5turn. every cloudy has 60% to rainy
+ 			> radio reccomands to change tyre intermediate.
+		when rainy. maintains 3turn. after 50% to cloudy or clear.
+ 			> radio forces to change tyre intermediate.
+			> spped ratio for tyre is change.
+
+

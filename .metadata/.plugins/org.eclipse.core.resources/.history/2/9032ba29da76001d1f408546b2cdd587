@@ -1,0 +1,20 @@
+package data;
+
+public class Car {
+	private double CarSpeed = 100;
+	
+	Fuel F = new Fuel();
+	Tire T = new Tire();
+	
+		
+	public double getCarSpeed() {
+		return CarSpeed;
+	}
+	public void setCarSpeed(int carSpeed) {
+		CarSpeed = carSpeed;
+	}
+	public void TireCarSpeed(double carSpeed) {
+		CarSpeed *= carSpeed;
+	}
+	
+}

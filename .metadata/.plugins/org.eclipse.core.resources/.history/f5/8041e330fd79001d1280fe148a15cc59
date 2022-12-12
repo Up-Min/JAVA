@@ -1,0 +1,46 @@
+package game;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import data.Map;
+
+public class Game_App {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Map M = new Map();
+		
+		
+		Map m1 = new Map ("아부다비",1600);
+		Map m2 = new Map ("런던",2000);
+		
+
+		
+		
+		
+		
+		
+		
+		System.out.println("===== F1 게임 =====");
+		System.out.println("==== 플레이를 원하시면 1번을 눌러주세요 ====");
+		int a = sc.nextInt();
+		if(a == 1) {
+			System.out.println("===== 플레이 하실 맵을 선택해주세요 =====");
+			System.out.println("1. 아부다비, 2. 런던");
+			int b = sc.nextInt();
+			if(b==1) {
+				System.out.println("맵 이름은 "+m1.getMapname() + "입니다.");
+				System.out.println("총 길이는 "+m1.getMapLength() + "km 입니다.");
+			}else if (b==2) {
+				System.out.println("맵 이름은"+m2.getMapname() + "입니다.");
+				System.out.println("총 길이는"+m2.getMapLength() + "입니다.");
+			}
+			
+		}
+		
+
+		
+	}
+
+}

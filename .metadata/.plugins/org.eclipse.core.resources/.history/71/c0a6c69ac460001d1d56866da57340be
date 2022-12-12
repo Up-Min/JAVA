@@ -1,0 +1,28 @@
+package test_11_10th;
+
+public class Array_ex {
+
+	public static void main(String[] args) {
+
+		String[] season = { "Spring", "Summer", "Fall", "Winter" };
+		System.out.println(season[0]);
+		System.out.println(season[1]);
+		System.out.println(season[2]);
+		System.out.println(season[3]);
+		// String형 배열 데이터 바꾸기
+		season[1] = "여름";
+		System.out.println(season[1]);
+
+		// 숫자형 배열
+		int[] arr = { 1,2,3,4,5,6,7,8,9,10 };
+		int sum =0;
+		//총합, 평균 구하기
+		for(int i=0; i<arr.length; i++) {
+			sum += arr[i];
+		}
+		System.out.println(sum);
+		
+		
+		
+	}
+}

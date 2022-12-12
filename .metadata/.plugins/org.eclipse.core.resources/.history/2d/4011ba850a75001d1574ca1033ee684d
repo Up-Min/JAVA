@@ -1,0 +1,27 @@
+package data;
+
+import setting.Define;
+
+public class Weather {
+	Car C = new Car();
+	Tire T = new Tire();
+	
+	public void WeatherClear() {
+		if(T.getNowTire() == Define.SLICK_TIRE) {
+			C.TireCarSpeed(1);
+		}else if(T.getNowTire() == Define.INTERMEDIATE_TIRE) {
+			C.TireCarSpeed(0.6);
+		}
+	}
+	public void WeatherCloudy() {
+		
+	}
+	public void Weatherrainy() {
+		if(T.getNowTire() == Define.SLICK_TIRE) {
+			C.TireCarSpeed(0.3);
+		}else if(T.getNowTire() == Define.INTERMEDIATE_TIRE) {
+			C.TireCarSpeed(0.8);
+		}
+	}
+	
+}
