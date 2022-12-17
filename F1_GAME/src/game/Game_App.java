@@ -1,65 +1,18 @@
 package game;
 
-import java.util.ArrayList;
-import java.util.Scanner;
 
-import data.Map;
-import data.Tire;
-import data.Weather;
+import data.*;
+
 import setting.Define;
 
 public class Game_App {
 
+	
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		Map M = new Map();
-		Weather W = new Weather();
-		Tire T = new Tire();
+		Game_field G = new Game_field();
+		G.gameIntro();
+		G.setWeather();
+		G.pitIn();
 		
-		Map m1 = new Map ("아부다비",1600);
-		Map m2 = new Map ("런던",2000);
-		
-		
-		System.out.println("===== F1 게임 =====");
-		System.out.println("==== 플레이를 원하시면 1번을 눌러주세요 ====");
-		int a = sc.nextInt();
-		if(a == 1) {
-			System.out.println("===== 플레이 하실 맵을 선택해주세요 =====");
-			System.out.println("1. 아부다비 2. 런던");
-			int b = sc.nextInt();
-			if(b==1) {
-				System.out.println("맵 이름은 "+m1.getMapname() + "입니다.");
-				System.out.println("총 길이는 "+m1.getMapLength() + "km 입니다.");
-			}else if (b==2) {
-				System.out.println("맵 이름은 "+m2.getMapname() + "입니다.");
-				System.out.println("총 길이는 "+m2.getMapLength() + "km 입니다.");
-			}
-			
-		}
-		System.out.println("날씨를 선택해주세요");
-		System.out.println("1. 맑음 2. 흐림 3. 비");
-		int b = sc.nextInt();
-		if(b==1) {
-			W.setWeather(Define.WEATHER_CLEAR);
-			T.tire_Clear();
-			System.out.println("맑음 날씨를 선택하셨습니다");
-			System.out.println("슬릭타이어 속도는 100%, 비용타이어는 60%의 속도를 냅니다.");
-		}
-		else if(b==2) {
-			W.setWeather(Define.WEATHER_CLOUDY);
-			T.tire_Clear();
-			System.out.println("흐림 날씨를 선택하셨습니다");
-			System.out.println("슬릭타이어 속도는 100%, 비용타이어는 60%의 속도를 냅니다.");
-		}else if(b==3) {
-			W.setWeather(Define.WEATHER_RAINY); 
-			T.tire_Rainy();
-			System.out.println("비 날씨를 선택하셨습니다");
-			System.out.println("슬릭타이어 속도는 30%, 비용타이어는 80%의 속도를 냅니다.");
-		}
-		
-		
-
-		
-	}
-
+	}	
 }

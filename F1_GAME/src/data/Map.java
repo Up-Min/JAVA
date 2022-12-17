@@ -11,17 +11,14 @@ public class Map {
 	public Map() {
 	}
 	
-	
 	public Map(String name, int length) {
 		this.Mapname = name;
 		this.MapLength = length;
 	}
 
-
 	public String getMapname() {
 		return Mapname;
 	}
-
 
 	public int getMapLength() {
 		return MapLength;

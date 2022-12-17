@@ -1,10 +1,7 @@
 package data;
 
 public class Car {
-	private double CarSpeed = 1;
-	
-	Fuel F = new Fuel();
-	Tire T = new Tire();
+	private static double CarSpeed = 100;
 	
 	public Car() {
 	}	
@@ -12,13 +9,13 @@ public class Car {
 	public double getCarSpeed() {
 		return CarSpeed;
 	}
-	public void setCarSpeed(int carSpeed) {
+	public static void setCarSpeed(int carSpeed) {
 		CarSpeed = carSpeed;
 	}
-	public void TireCarSpeed(double carSpeed) {
+	public static void TireCarSpeed(double carSpeed) {
 		CarSpeed = carSpeed;
 	}
-	public void recoverCarSpeed() {
+	public static void recoverCarSpeed() {
 		CarSpeed = 160;
 	}
 	

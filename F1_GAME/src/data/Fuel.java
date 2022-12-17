@@ -15,7 +15,7 @@ public class Fuel {
 	
 	public void FuelUse(int use) {
 		this.FuelLevel -= use;
-		System.out.println("기름 " + use + "L 만큼 소비.");
+		System.out.println("기름 " + use + "% 만큼 소비.");
 	}
 
 	public int getFuelLevel() {

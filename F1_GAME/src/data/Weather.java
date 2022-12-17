@@ -1,19 +1,19 @@
 package data;
-
+import data.*;
 import setting.Define;
 
 public class Weather {
-	private int weather;
+	private static int weather;
+	Tire T = new Tire();
+	
 	
 	public Weather() {}
 	
 	public void setWeather(int weather) {
 		this.weather = weather;
 	}
-	public int getWeather() {
+	public static int getWeather() {
 		return weather;
 	}
-	public void weatherClear() {
-		
-	}
+
 }

@@ -1,0 +1,26 @@
+    <%@ page import = "java.util.*"%><!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>계산기</title>
+</head>
+<body>
+
+	<h2> 계산기 서블릿</h2>
+	<hr>
+	<form method = "post" action = "/jsp_study/calc"> <!-- 보내는 방식 지정, 경로 지정 -->
+		<input type="text" name = "n1" size = "10"/>
+		<select name = "op">
+			<option> + </option>
+			<option> - </option>
+			<option> * </option>
+			<option> / </option>
+		</select>
+		<input type="text" name = "n2" size = "10"/>
+		<input type = "submit" value = "실행"/> 
+<!-- 		실행 버튼을 누를 때, 폼 태그 안에 있는 애를 보낸다.
+		보낸 애을 받는 위치를 지정 (action)-> jsp_stydy에 calc라고 지정을 해준다.
+		servlet에 데이터를 넘겨주기 위해, servlet 만들때도 동일한 루트로 지정을 해줘야함. -->
+	</form>
+</body>
+</html>

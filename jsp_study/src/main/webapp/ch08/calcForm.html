@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>계산기</title>
+</head>
+<body>
+	<!-- MVC에서 Action View의 역할을 하는 아이임. -->
+	<h2> 계산기 jsp</h2>
+	<hr>
+	<!-- CalcContorller 가 받을 수 있게 경로 지정 -->
+	<form method = "post" action = "/jsp_study/CalcController">
+		
+		<input type="text" name = "n1" size = "10"/>
+		<select name = "op">
+			<option> + </option>
+			<option> - </option>
+			<option> * </option>
+			<option> / </option>
+		</select>
+		<input type="text" name = "n2" size = "10"/>
+		<input type = "submit" value = "실행"/> 
+	</form>
+</body>
+</html>
